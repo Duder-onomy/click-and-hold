@@ -9,4 +9,5 @@ cache:
     - $HOME/.npm
 
 script:
+  - yarn
   - yarn run lint
