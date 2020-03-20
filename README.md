@@ -1,5 +1,7 @@
 # Click And Hold
 
+[![Build Status](https://travis-ci.com/Duder-onomy/click-and-hold.svg?branch=master)](https://travis-ci.com/Duder-onomy/click-and-hold)
+
 Will fire a handler throttled by an interval, continuously while user presses on element.
 
 Supports touch.
