@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "12"
+
+cache:
+  yarn: true
+  npm: false
+  directories:
+    - $HOME/.npm
+
+script:
+  - yarn
+  - yarn run lint
