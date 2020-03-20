@@ -4,15 +4,21 @@ Will fire a handler throttled by an interval, continuously while user presses on
 
 Supports touch.
 
+Zero dependencies.
+
 ### How to use:
 Important to note: If your handler relies on scope, ensure it is called with the correct scope by binding the scope directly, or using the closure.
 ```javascript
-var clickAndHold = require('click-and-hold');
+import clickAndHold from 'click-and-hold';
 
 clickAndHold.register(element, handler.bind(theScopeYouWant), interval);
 
 clickAndHold.unregister(element);
 ```
+
+### How it works:
+When the element is first interacted with (mousedown, touchstart), we start a loop that will continuously try and call a passed handler on a passed interval.
+To avoid complexity, we store the interval and subsequent handlers on the element itself. Its only 50 something lines. Scope it.
 
 ### Install:
 
