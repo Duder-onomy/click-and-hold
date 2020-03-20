@@ -26,4 +26,7 @@ To avoid complexity, we store the interval and subsequent handlers on the elemen
 npm install --save-dev click-and-hold
 ```
 
+### Upgrading
+From 1.X.X -> 2.X.X, We are now using es6 module imports instead of common.js. Thinks like webpack/browserify/etc should be able to hang either way.
+
 I am not trying to camp names on NPM, so if someone else wants this name just let me know and I will gladly take my repo down.
